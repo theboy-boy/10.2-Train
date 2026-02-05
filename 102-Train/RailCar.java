@@ -5,9 +5,9 @@ public class RailCar{
     protected Color color;
     protected int xCord;
 
-    public RailCar(Color color, int xCord) {
+    public RailCar(Color color, int position) {
         this.color = color;
-        this.xCord = xCord;
+        this.xCord = position*240;
     }
     public void drawCar(Graphics g){
         g.setColor(color);
@@ -15,6 +15,7 @@ public class RailCar{
         g.setColor(Color.black);
         g.fillOval(xCord+125, 275, 50, 50);
         g.fillOval(xCord+275, 275, 50, 50);
+        g.fillRect(xCord+80, 280, 50, 10);
 
     }
 
