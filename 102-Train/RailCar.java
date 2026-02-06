@@ -18,7 +18,9 @@ public class RailCar{
         g.fillRect(xCord+80, 280, 50, 10);
 
     }
-
+    public void setPosition(int position){
+        xCord=position*240;
+    }
 
 }
 

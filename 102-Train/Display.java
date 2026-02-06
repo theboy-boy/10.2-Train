@@ -10,13 +10,12 @@ public class Display extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g); //satisfies the parent class' requirements.
 		setBackground(Color.WHITE);
-		Caboos railCar = new Caboos(Color.black, 3);
-		railCar.drawCar(g);
-		Pasenger railCar2 = new Pasenger(Color.black, 1);
-		railCar2.drawCar(g);
-		Fraight railCar3 = new Fraight(Color.black, 2);
-		railCar3.drawCar(g);
-		Locomotive railCar4 = new Locomotive(Color.blue, 0);
-		railCar4.drawCar(g);
+		Train train = new Train();
+		train.addCar("locomotive");
+		train.addCar("passenger");
+		train.addCar("fraight");
+		train.addCar("caboos");
+		train.addCar(1, "caboos");
+		train.showTrain(g);
 	}
 }

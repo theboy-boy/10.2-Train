@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;  
 public class Fraight extends RailCar {
-    public Fraight(Color color, int xCord){
-        super(color, xCord);
+    public Fraight(Color color, int position){
+        super(color, position);
     }
     public void drawCar(Graphics g ){
         color=Color.green;

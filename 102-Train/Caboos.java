@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;  
 public class Caboos extends RailCar {
-    public Caboos(Color color, int xCord){
-        super(color, xCord);
+    public Caboos(Color color, int position){
+        super(color, position);
     }
     public void drawCar(Graphics g ){
         color=Color.red;

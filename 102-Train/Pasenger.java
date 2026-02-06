@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;  
 public class Pasenger extends RailCar {
-    public Pasenger(Color color, int xCord){
-        super(color, xCord);
+    public Pasenger(Color color, int position){
+        super(color, position);
     }
     public void drawCar(Graphics g ){
         color=Color.gray;
